@@ -196,6 +196,7 @@ section {
 }
 
 .quiz_box header{
+    width: 550px;
     position: relative;
     z-index: 2;
     height: 70px;
