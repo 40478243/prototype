@@ -109,9 +109,6 @@ section {
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
 .result_box.activeResult{
-    position: absolute;
-    top: 50%;
-    left: 50%;
     opacity: 1;
     z-index: 5;
     pointer-events: auto;
@@ -189,7 +186,6 @@ section {
 }
 
 .quiz_box{
-    width: 550px;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
