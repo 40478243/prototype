@@ -13,7 +13,11 @@ a {
 ul {
     list-style: none;
 }
-
+.active {
+    color:#fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
 /* Navbar */
 .navbar {
     position: absolute;
@@ -35,7 +39,7 @@ ul {
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url('https://www.pexels.com/photo/landscape-photography-of-sandy-beach-with-palm-trees-2785216/');
+    background-image: url('backimage.jpg');
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -69,3 +73,20 @@ header {
     color: whitesmoke
 }
 
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
