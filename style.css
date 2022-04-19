@@ -97,6 +97,14 @@ section {
     color: #49497e;
 }
 
+.learn-content {
+    width: 50%;
+    padding: 50px;
+    color: #49497e
+    display: flex;
+    align-items: centre;
+    flex-direction: column;
+}
 
 .start_btn,
 .info_box,
