@@ -98,7 +98,6 @@ section {
 }
 
 .learn-content {
-    width: 50%;
     padding: 100px;
     color: #49497e;
     display: flex;
@@ -108,7 +107,7 @@ section {
 
 .footer {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     padding: 20px 80px;
     margin: 0;
     background: #484872;
