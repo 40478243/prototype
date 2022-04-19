@@ -91,7 +91,11 @@ section {
     color: #49497e;
 }
 
-
+.learn {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
 
 
 .start_btn,
