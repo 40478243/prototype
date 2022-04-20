@@ -210,3 +210,18 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+
+
+
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("navbar");
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+}
