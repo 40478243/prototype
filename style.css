@@ -73,6 +73,10 @@ header {
     border-radius: 30px;
     color: whitesmoke
 }
+.ctn:hover {
+    background: whitesmoke;
+    color: #fc036b
+}
 
 .menu-btn {
     position: absolute;
