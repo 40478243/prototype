@@ -255,7 +255,7 @@ function navHighlighter() {
     // This allows the use of sections inside a relative parent, which I'm not using here, but needed for a project
     //
         const sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 50;
-        sectionId = current.getAttribute("id");
+        id = current.getAttribute("id");
     
     /*
     - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
@@ -265,9 +265,9 @@ function navHighlighter() {
             scrollY > sectionTop &&
             scrollY <= sectionTop + sectionHeight
             ){
-            document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
+            document.querySelector(".navbar a[href*=" + id + "]").classList.add("active");
         } else {
-            document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+            document.querySelector(".navbar a[href*=" + id + "]").classList.remove("active");
         }
     });
 }
