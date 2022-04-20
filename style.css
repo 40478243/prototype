@@ -105,6 +105,19 @@ section {
     align-items: centre;
     flex-direction: column;
 }
+.about {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+
+.about-content {
+    padding: 100px;
+    color: #49497e;
+    display: flex;
+    align-items: centre;
+    flex-direction: column;
+}
 
 .footer {
     width: 100%;
