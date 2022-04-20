@@ -1,2 +1,2 @@
-var soundCorrect = new Audio("rightsound.mp3");
-var soundIncorrect = new Audio("wrongsound.mp3");
+var soundCorrect = new Audio("sounds/rightsound.mp3");
+var soundIncorrect = new Audio("sounds/wrongsound.mp3");
