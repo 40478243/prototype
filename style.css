@@ -577,18 +577,17 @@ footer button.show{
   
   /* Set a specific color for each brand */
   
-  /* Facebook */
   .fa-facebook {
     background: #3B5998;
     color: white;
   }
 
   .fa-instagram {
-    background: #3B5998;
+    background: #125688;
     color: white;
   }
 
   .fa-youtube {
-    background: #fc036b;
+    background: #bb0000;
     color: white;
   }
