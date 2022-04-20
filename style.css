@@ -137,6 +137,9 @@ section {
     margin: 20px auto;
     text-align: center;
 }
+.maillink:hover {
+    opacity: 0.7;
+}
 
 .start_btn,
 .info_box,
