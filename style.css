@@ -592,3 +592,7 @@ footer button.show{
     background: #bb0000;
     color: white;
   }
+
+.thequiz1 {
+    background-image: url(frame.png);
+}
