@@ -15,7 +15,7 @@ ul {
     list-style: none;
 }
 .active {
-    color:#fc036b;
+    color: #659dbd;;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -58,7 +58,7 @@ header {
 .line {
     width:150px;
     height:4px;
-    background: #fc036b;
+    background: #659dbd;
     margin: 10px auto;
     border-radius: 5px;
 }
@@ -69,13 +69,13 @@ header {
 }
 .ctn {
     padding: 8px 15px;
-    background: #fc036b;
+    background: #659dbd;
     border-radius: 30px;
     color: whitesmoke
 }
 .ctn:hover {
     background: whitesmoke;
-    color: #fc036b
+    color: #659dbd
 }
 
 .menu-btn {
@@ -137,9 +137,7 @@ section {
     margin: 20px auto;
     text-align: center;
 }
-.maillink:hover {
-    opacity: 0.7;
-}
+
 
 .start_btn,
 .info_box,
@@ -598,4 +596,11 @@ footer button.show{
 
 .thequiz1 {
     background-image: url(frame.png);
+    width: 100vw;
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
