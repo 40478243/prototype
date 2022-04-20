@@ -567,6 +567,7 @@ footer button.show{
     width: 50px;
     text-align: center;
     text-decoration: none;
+    align-items: center;
   }
   
   /* Add a hover effect if you want */
@@ -579,5 +580,15 @@ footer button.show{
   /* Facebook */
   .fa-facebook {
     background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #fc036b;
     color: white;
   }
