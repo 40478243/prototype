@@ -33,6 +33,7 @@ ul {
 .nav-links {
     display: flex;
     align-items: center;
+    color: whitesmoke;
 }
 .nav-links li {
     margin: 0 30px;
