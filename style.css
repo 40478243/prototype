@@ -29,6 +29,7 @@ ul {
     justify-content: space-between;
     padding: 20px;
     color: whitesmoke;
+    background-color: #3e3c3c;
 }
 .nav-links {
     display: flex;
