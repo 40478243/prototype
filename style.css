@@ -47,15 +47,14 @@ ul {
   }
 
 .nav a.active {
-    color: #1e1e1e;
+    color: #ffffff;
     background: white;
 }
 
-.nav a:hover {
+nav a:hover {
     text-decoration: underline;
 }
   
-
 header {
     width: 100vw;
     height: 100vh;
