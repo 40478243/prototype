@@ -38,6 +38,24 @@ ul {
 .nav-links li {
     margin: 0 30px;
 }
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 5px;
+  }
+
+nav a.active {
+    color: #1e1e1e;
+    background: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+  
+
 header {
     width: 100vw;
     height: 100vh;
