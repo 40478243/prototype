@@ -14,7 +14,7 @@ a {
 ul {
     list-style: none;
 }
-active {
+.active {
     color: #659dbd;;
     text-decoration: underline;
     font-weight: bold;
@@ -182,7 +182,7 @@ section {
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
-    color: #007bff;
+    color: #659dbd;
     padding: 15px 30px;
     outline: none;
     border: none;
@@ -224,7 +224,7 @@ section {
 
 .info_box .info-list .info span{
     font-weight: 600;
-    color: #007bff;
+    color: #659dbd;
 }
 .info_box .buttons{
     height: 60px;
@@ -245,7 +245,7 @@ section {
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #007bff;
+    border: 1px solid #659dbd;
     transition: all 0.3s ease;
 }
 
@@ -316,7 +316,7 @@ section {
     bottom: 0px;
     left: 0px;
     height: 3px;
-    background: #007bff;
+    background: #659dbd;
 }
 
 section{
@@ -353,7 +353,7 @@ section .option_list .option:last-child{
 }
 
 section .option_list .option:hover{
-    color: #004085;
+    color: #659dbd;
     background: #cce5ff;
     border: 1px solid #b8daff;
 }
@@ -430,8 +430,8 @@ footer button{
     outline: none;
     color: #fff;
     border-radius: 5px;
-    background: #007bff;
-    border: 1px solid #007bff;
+    background: #659dbd;
+    border: 1px solid #659dbd;
     line-height: 10px;
     opacity: 0;
     pointer-events: none;
@@ -440,7 +440,7 @@ footer button{
 }
 
 footer button:hover{
-    background: #0263ca;
+    background: #659dbd;
 }
 
 footer button.show{
@@ -466,7 +466,7 @@ footer button.show{
 
 .result_box .icon{
     font-size: 100px;
-    color: #007bff;
+    color: #659dbd;
     margin-bottom: 10px;
 }
 
@@ -502,27 +502,27 @@ footer button.show{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #007bff;
+    border: 1px solid #659dbd;
     transition: all 0.3s ease;
 }
 
 .buttons button.restart{
     color: #fff;
-    background: #007bff;
+    background: #659dbd;
 }
 
 .buttons button.restart:hover{
-    background: #0263ca;
+    background: #659dbd;
 }
 
 .buttons button.quit{
-    color: #007bff;
+    color: #659dbd;
     background: #fff;
 }
 
 .buttons button.quit:hover{
     color: #fff;
-    background: #007bff;
+    background: #659dbd;
 }
 @media only screen and (max-width: 600px) {
     .info_box {
@@ -614,8 +614,8 @@ footer button.show{
 
 .thequiz1 {
     background-image: url(frame.png);
-    width: 100vw;
-    height: 100vh;
+    width: 80vw;
+    height: 80vh;
     background-position: bottom;
     background-size: cover;
     display: flex;
