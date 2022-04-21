@@ -232,18 +232,22 @@ function myFunction() {
 
 
 
-let title = document.getElementById("title");
 let navbar = document.getElementById("navbar");
+let viewportHeight = window.innerHeight;
+let navHeight = document.getElementById("navbar").offsetHeight;
   
-let navPos = navbar.getBoundingClientRect().top;
+let navbarLinks = document.querySelectorAll("nav a");
   
 window.addEventListener("scroll", e => {
-    let scrollPos = window.scrollY;
-    if (scrollPos > navPos) {
-        navbar.classList.add('sticky');
-        header.classList.add('navbarOffsetMargin');
-    } else {
-        navbar.classList.remove('sticky');
-        header.classList.remove('navbarOffsetMargin');
-    }
+    scrollpos = window.scrollY;
+    navbarLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+        if (section.offsetTop <= scrollpos + 150 &&
+            section.offsetTop + section.offsetHeight > scrollpos + 150) {
+            link.classList.add("active");
+        } 
+        else {
+            link.classList.remove("active");
+        }
+    });
 });
