@@ -7,6 +7,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 a {
     text-decoration: none;
     text-align: center;
@@ -30,6 +33,7 @@ ul {
     padding: 20px;
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.2);
+    z-index: 99;
 }
 .nav-links {
     display: flex;
@@ -163,13 +167,15 @@ section {
 .quiz_box,
 .result_box{
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 200px;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.quiz-sec{
+    position: relative;
+}
 
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
@@ -622,10 +628,4 @@ footer button.show{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    position: relative;
-}
-
-.start_btn{
-    top: 0%;
-    left: 50%;
 }
