@@ -178,6 +178,7 @@ section {
     z-index: 5;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
+    overflow: hidden;
 }
 
 .start_btn button{
@@ -190,6 +191,7 @@ section {
     border-radius: 5px;
     background: #fff;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .info_box{
@@ -200,6 +202,7 @@ section {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .info_box .info-title{
@@ -212,6 +215,7 @@ section {
     border-radius: 5px 5px 0 0;
     font-size: 20px;
     font-weight: 600;
+    overflow: hidden;
 }
 
 .info_box .info-list{
