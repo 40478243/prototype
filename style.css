@@ -592,37 +592,79 @@ footer button.show{
     padding-top: 102px;
 }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 100px;
-    text-align: center;
+.socials a{
+    display: inline-flex;
     text-decoration: none;
-    display: inline-block;
-  }
-  
+    font-size: 36px;
+    width: 60px;
+    height: 60px;
+    color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 7px;
+}
+.socials a::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    z-index: -1;
+    transition: transform .3s ease-in;
+}
+.socials a:nth-child(1)::before{
+    background: #38529a;
+}
+.socials a:nth-child(2)::before{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.socials a:nth-child(3)::before{
+    background: #1c96e9;
+}
+.socials a:nth-child(4)::before{
+    background: #f70000;
+}
+.socials a:nth-child(5)::before{
+    background: #046596;
+}
+.socials a:hover::before{
+    transform: scale(0);
+}
+.socials a i{
+    transition: transform .3s ease-in;
+}
+.socials a:nth-child(1):hover i{
+    background: #38529a;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+}
+.socials a:nth-child(2):hover i{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+}
+.socials a:nth-child(3):hover i{
+    background: #1c96e9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+}
+.socials a:nth-child(4):hover i{
+    background: #f70000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+}
+.socials a:nth-child(5):hover i{
+    background: #046596;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.5);
+}
 
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
-
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
 
 .title-content {
     width: 80vw;
