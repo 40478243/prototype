@@ -620,13 +620,7 @@ footer button.show{
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
 .socials a:nth-child(3)::before{
-    background: #1c96e9;
-}
-.socials a:nth-child(4)::before{
     background: #f70000;
-}
-.socials a:nth-child(5)::before{
-    background: #046596;
 }
 .socials a:hover::before{
     transform: scale(0);
@@ -647,20 +641,8 @@ footer button.show{
     transform: scale(1.5);
 }
 .socials a:nth-child(3):hover i{
-    background: #1c96e9;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(1.5);
-}
-.socials a:nth-child(4):hover i{
     background: #f70000;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(1.5);
-}
-.socials a:nth-child(5):hover i{
-    background: #046596;
-    -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.5);
 }
