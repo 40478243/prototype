@@ -118,7 +118,6 @@ section {
     text-align: center;
     font-size: 4vmin;
     color: #49497e;
-    background-color: #b7b7b7;
 }
 
 .learn {
@@ -596,11 +595,10 @@ footer button.show{
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 50px;
+    width: 100px;
     text-align: center;
     text-decoration: none;
-    align-items: center;
-    position:absolute
+    display: block;
   }
   
   /* Add a hover effect if you want */
