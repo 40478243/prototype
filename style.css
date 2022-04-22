@@ -592,6 +592,10 @@ footer button.show{
     padding-top: 102px;
 }
 
+.socials {
+    text-align: center;
+}
+
 .socials a{
     display: inline-flex;
     text-decoration: none;
