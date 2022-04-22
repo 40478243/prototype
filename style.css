@@ -644,7 +644,7 @@ footer button.show{
 }
 .socials a:nth-child(1):hover i{
     background: #38529a;
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.5);
 }
