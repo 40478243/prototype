@@ -118,13 +118,15 @@ section {
     text-align: center;
     font-size: 4vmin;
     color: #49497e;
+    background-color: #b7b7b7;
 }
 
 .learn {
     text-align: center;
     font-size: 4vmin;
     color: #49497e;
-    background-color: #b7b7b7;
+    background-color: #e7e7e7;
+    width: auto;
 }
 
 .learn-content {
