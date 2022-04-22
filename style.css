@@ -120,6 +120,16 @@ section {
     color: #49497e;
 }
 
+.title-content {
+    width: 80vw;
+    height: 80vh;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
 .learn {
     text-align: center;
     font-size: 4vmin;
@@ -634,7 +644,7 @@ footer button.show{
 }
 .socials a:nth-child(1):hover i{
     background: #38529a;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.5);
 }
@@ -649,15 +659,4 @@ footer button.show{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.5);
-}
-
-
-.title-content {
-    width: 80vw;
-    height: 80vh;
-    background-position: bottom;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
