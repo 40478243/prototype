@@ -125,7 +125,7 @@ section {
     text-align: center;
     font-size: 4vmin;
     color: #49497e;
-    background-color: #e7e7e7;
+    background-color: #efeeee;
     width: auto;
 }
 
@@ -600,6 +600,7 @@ footer button.show{
     text-align: center;
     text-decoration: none;
     align-items: center;
+    position:absolute
   }
   
   /* Add a hover effect if you want */
