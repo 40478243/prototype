@@ -592,7 +592,7 @@ footer button.show{
     padding-top: 102px;
 }
 
-.fa {
+.fa li{
     padding: 20px;
     font-size: 30px;
     width: 100px;
@@ -601,8 +601,6 @@ footer button.show{
     display: inline-block;
   }
   
-  ul.fa li {
-      display: inline-block;
   }
   /* Add a hover effect if you want */
   .fa:hover {
