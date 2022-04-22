@@ -129,6 +129,7 @@ section {
     align-items: flex-end;
     justify-content: center;
     margin: 0px;
+    padding: 0px;
 }
 
 .learn {
