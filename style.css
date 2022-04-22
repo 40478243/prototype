@@ -652,12 +652,14 @@ footer button.show{
 .socials a:nth-child(2):hover i{
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.5);
 }
 .socials a:nth-child(3):hover i{
     background: #f70000;
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.5);
 }
