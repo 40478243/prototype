@@ -599,7 +599,6 @@ footer button.show{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    align-items: horizontal;
   }
   
   /* Add a hover effect if you want */
