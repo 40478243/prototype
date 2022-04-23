@@ -122,7 +122,7 @@ section {
 
 .title-content {
     width: 80vw;
-    height: 80vh;
+    height: 60vh;
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -148,6 +148,10 @@ section {
     flex-direction: column;
     text-align: center;
 }
+.learn-content p {
+    margin-bottom: 10px;
+}
+
 .about {
     text-align: center;
     font-size: 4vmin;
@@ -343,7 +347,7 @@ section {
 }
 
 section{
-    padding: 25px 30px 20px 30px;
+    padding: 25px 30px 25px 30px;
     background: #fff;
 }
 
