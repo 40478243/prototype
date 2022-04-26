@@ -39,7 +39,7 @@ const f2 = () => {
     clearInterval(counterLine); //clear counterLine
     startTimer(timeValue); //calling startTimer function
     startTimerLine(widthValue); //calling startTimerLine function
-    timeText.textContent = "Time Left"; //change the text of timeText to Time Left
+    timeText.textContent = "Coundown"; //change the text of timeText to Countdown
     next_btn.classList.remove("show"); //hide the next button
 }
 
