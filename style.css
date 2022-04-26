@@ -109,9 +109,9 @@ header {
 }
 
 .ctn {
-    padding: 8px 15px;
+    padding: 10px 20px;
     background: #659dbd;
-    border-radius: 30px;
+    border-radius: 32px;
     color: #f5f5f5
 }
 
@@ -194,7 +194,7 @@ section {
 
 .footer p {
     color: #f5f5f5;
-    margin: 20px auto;
+    margin: 18px auto;
     text-align: center;
 }
 
@@ -224,8 +224,8 @@ section {
 }
 
 .start_btn button {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 450;
     color: #659dbd;
     padding: 15px 30px;
     outline: none;
@@ -236,24 +236,24 @@ section {
 }
 
 .info_box {
-    width: 540px;
+    width: 530px;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     text-align: center;
 }
 
 .info_box .info-title {
     height: 50px;
     width: 100%;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
     display: flex;
     align-items: center;
     padding: 0 30px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 6px 6px 0 0;
     font-size: 20px;
     font-weight: 600;
 }
@@ -292,7 +292,7 @@ section {
     outline: none;
     border-radius: 5px;
     border: 1px solid #659dbd;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .quiz_box {
@@ -302,7 +302,7 @@ section {
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .quiz_box header {
@@ -327,14 +327,14 @@ section {
 .quiz_box header .timer {
     color: #004085;
     background: #cce5ff;
-    border: 1px solid #b8daff;
+    border: 2px solid #b8daff;
     height: 45px;
     padding: 0 8px;
-    border-radius: 5px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 145px;
+    width: 150px;
 }
 
 .quiz_box header .timer .time_left_txt {
@@ -352,8 +352,8 @@ section {
     border-radius: 5px;
     line-height: 30px;
     text-align: center;
-    background: #343a40;
-    border: 1px solid #343a40;
+    background: #343a41;
+    border: 1px solid #343a41;
     user-select: none;
 }
 
@@ -381,14 +381,14 @@ section .option_list {
 }
 
 section .option_list .option {
-    background: aliceblue;
+    background: rgb(240, 248, 255);
     border: 1px solid #84c5fe;
     border-radius: 5px;
     padding: 8px 15px;
     font-size: 17px;
     margin-bottom: 15px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -400,18 +400,18 @@ section .option_list .option:last-child {
 
 section .option_list .option:hover {
     color: #659dbd;
-    background: #cce5ff;
-    border: 1px solid #b8daff;
+    background: #cde3fb;
+    border: 1px solid #bcdcff;
 }
 
 section .option_list .option.correct {
-    color: #155724;
+    color: #1d6a2f;
     background: #d4edda;
     border: 1px solid #c3e6cb;
 }
 
 section .option_list .option.incorrect {
-    color: #721c24;
+    color: #91242f;
     background: #f8d7da;
     border: 1px solid #f5c6cb;
 }
@@ -421,14 +421,14 @@ section .option_list .option.disabled {
 }
 
 section .option_list .option .icon {
-    height: 26px;
-    width: 26px;
+    height: 24px;
+    width: 24px;
     border: 2px solid transparent;
     border-radius: 50%;
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     pointer-events: none;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     line-height: 24px;
 }
 
@@ -483,7 +483,7 @@ footer button {
     opacity: 0;
     pointer-events: none;
     transform: scale(0.95);
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 footer button:hover {
@@ -508,7 +508,7 @@ footer button.show {
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .result_box .icon {
@@ -550,7 +550,7 @@ footer button.show {
     outline: none;
     border-radius: 5px;
     border: 1px solid #659dbd;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .buttons button.restart {
@@ -606,7 +606,7 @@ footer button.show {
     height: 60px;
     border-radius: 25%;
     z-index: -1;
-    transition: transform .3s ease-in;
+    transition: transform 0.4s ease-in;
 }
 
 .socials a:nth-child(1)::before {
@@ -626,7 +626,7 @@ footer button.show {
 }
 
 .socials a i {
-    transition: transform .3s ease-in;
+    transition: transform 0.4s ease-in;
 }
 
 .socials a:nth-child(1):hover i {
