@@ -120,7 +120,7 @@ header {
     color: #659dbd
 }
 
-.menu-button {
+.menu-btn {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -198,8 +198,8 @@ section {
     text-align: center;
 }
 
-.start_button,
-.intro_box,
+.start_btn,
+.info_box,
 .quiz_box,
 .result_box {
     position: absolute;
@@ -213,7 +213,7 @@ section {
     position: relative;
 }
 
-.intro_box.activeInfo,
+.info_box.activeInfo,
 .quiz_box.activeQuiz,
 .result_box.activeResult {
     width: 550px;
@@ -223,7 +223,7 @@ section {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.start_button button {
+.start_btn button {
     font-size: 25px;
     font-weight: 500;
     color: #659dbd;
@@ -235,7 +235,7 @@ section {
     cursor: pointer;
 }
 
-.intro_box {
+.info_box {
     width: 540px;
     background: #fff;
     border-radius: 5px;
@@ -246,7 +246,7 @@ section {
     text-align: center;
 }
 
-.intro_box .info-title {
+.info_box .info-title {
     height: 60px;
     width: 100%;
     border-bottom: 1px solid lightgrey;
@@ -258,21 +258,21 @@ section {
     font-weight: 600;
 }
 
-.intro_box .info-list {
+.info_box .info-list {
     padding: 15px 30px;
 }
 
-.intro_box .info-list .info {
+.info_box .info-list .info {
     margin: 5px 0;
     font-size: 17px;
 }
 
-.intro_box .info-list .info span {
+.info_box .info-list .info span {
     font-weight: 600;
     color: #659dbd;
 }
 
-.intro_box .buttons {
+.info_box .buttons {
     height: 60px;
     display: flex;
     align-items: center;
@@ -281,7 +281,7 @@ section {
     border-top: 1px solid lightgrey;
 }
 
-.intro_box .buttons button {
+.info_box .buttons button {
     margin: 0 5px;
     height: 40px;
     width: 100px;
