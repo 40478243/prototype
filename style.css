@@ -41,7 +41,7 @@ ul {
     width: 100%;
     justify-content: space-between;
     padding: 10px;
-    color: whitesmoke;
+    color: #f6f6f6;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 99;
 }
@@ -49,7 +49,7 @@ ul {
 .nav-links {
     display: flex;
     align-items: center;
-    color: whitesmoke;
+    color: #f6f6f6;
 }
 
 .nav-links li {
@@ -57,7 +57,7 @@ ul {
 }
 
 nav a {
-    color: whitesmoke;
+    color: #f6f6f6;
     text-decoration: none;
     margin: 0px 10px;
     padding: 5px;
@@ -85,7 +85,7 @@ header {
 
 .header-content {
     margin-bottom: 150px;
-    color: whitesmoke;
+    color: #f5f5f5;
     text-align: center;
 }
 
@@ -112,11 +112,11 @@ header {
     padding: 8px 15px;
     background: #659dbd;
     border-radius: 30px;
-    color: whitesmoke
+    color: #f5f5f5
 }
 
 .ctn:hover {
-    background: whitesmoke;
+    background: #f5f5f5;
     color: #659dbd
 }
 
@@ -193,7 +193,7 @@ section {
 }
 
 .footer p {
-    color: whitesmoke;
+    color: #f5f5f5;
     margin: 20px auto;
     text-align: center;
 }
@@ -247,7 +247,7 @@ section {
 }
 
 .info_box .info-title {
-    height: 60px;
+    height: 50px;
     width: 100%;
     border-bottom: 1px solid lightgrey;
     display: flex;
@@ -273,7 +273,7 @@ section {
 }
 
 .info_box .buttons {
-    height: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -531,7 +531,7 @@ footer button.show {
 
 .result_box .score_text span p {
     padding: 0 4px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .result_box .buttons {
