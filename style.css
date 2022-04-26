@@ -207,7 +207,6 @@ section {
     top: 200px;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
 }
 
 .quiz-sec {
@@ -244,6 +243,7 @@ section {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .info_box .info-title {
