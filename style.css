@@ -95,7 +95,7 @@ header {
 }
 
 .line {
-    width: 150px;
+    width: 166px;
     height: 4px;
     background: #659dbd;
     margin: 10px auto;
@@ -198,7 +198,7 @@ section {
     text-align: center;
 }
 
-.start_btn,
+.starting_btn,
 .info_box,
 .quiz_box,
 .result_box {
@@ -223,7 +223,7 @@ section {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.start_btn button {
+.starting_btn button {
     font-size: 30px;
     font-weight: 450;
     color: #659dbd;

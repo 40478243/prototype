@@ -1,5 +1,5 @@
 //selecting all required elements
-const start_btn = document.querySelector(".start_btn button");
+const starting_btn = document.querySelector(".starting_btn button");
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
@@ -37,14 +37,14 @@ const let2 = () => {
     questionCounter(question_numb); //passing que_numb value to queCounter
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
-    startTimer(timer_seconds); //calling startTimer function
-    startTimerLine(widthValue); //calling startTimerLine function
+    startingTimer(timer_seconds); //calling startTimer function
+    startingTimerLine(widthValue); //calling startTimerLine function
     timeText.textContent = "Coundown"; //change the text of timeText to Countdown
     next_btn.classList.remove("show"); //hide the next button
 }
 
 // if startQuiz button clicked
-start_btn.onclick = let1;
+starting_btn.onclick = let1;
 // if exitQuiz button clicked
 exit_btn.onclick = let1;
 
@@ -59,8 +59,8 @@ continue_btn.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showTheQuetions(0); //calling showQestions function
     questionCounter(1); //passing 1 parameter to queCounter
-    startTimer(30); //calling startTimer function
-    startTimerLine(0); //calling startTimerLine function
+    startingTimer(30); //calling startTimer function
+    startingTimerLine(0); //calling startTimerLine function
 }
 
 // if restartQuiz button clicked
@@ -166,7 +166,7 @@ function showResult() {
     }
 }
 
-function startTimer(time) {
+function startingTimer(time) {
     counter = setInterval(timer, 1000);
 
     function timer() {
@@ -196,7 +196,7 @@ function startTimer(time) {
     }
 }
 
-function startTimerLine(time) {
+function startingTimerLine(time) {
     counterLine = setInterval(timer, 56);
 
     function timer() {
