@@ -1,8 +1,8 @@
 //selecting all required elements
-const start_btn = document.querySelector(".start_btn button");
+const start_button = document.querySelector(".start_button button");
 const info_box = document.querySelector(".info_box");
-const exit_btn = info_box.querySelector(".buttons .quit");
-const continue_btn = info_box.querySelector(".buttons .restart");
+const exit_button = info_box.querySelector(".buttons .quit");
+const continue_button = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
@@ -11,7 +11,7 @@ const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
-const next_btn = document.querySelector("footer .next_btn");
+const next_button = document.querySelector("footer .next_button");
 const bottom_ques_counter = document.querySelector("footer .total_que");
 
 // other variables required for running
@@ -40,13 +40,13 @@ const f2 = () => {
     startTimer(timeValue); //calling startTimer function
     startTimerLine(widthValue); //calling startTimerLine function
     timeText.textContent = "Coundown"; //change the text of timeText to Countdown
-    next_btn.classList.remove("show"); //hide the next button
+    next_button.classList.remove("show"); //hide the next button
 }
 
 // if startQuiz button clicked
-start_btn.onclick = f1;
+start_button.onclick = f1;
 // if exitQuiz button clicked
-exit_btn.onclick = f1;
+exit_button.onclick = f1;
 
 // if quitQuiz button clicked
 quit_quiz.onclick = () => {
@@ -54,7 +54,7 @@ quit_quiz.onclick = () => {
 }
 
 // if continueQuiz button clicked
-continue_btn.onclick = () => {
+continue_button.onclick = () => {
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
@@ -76,7 +76,7 @@ restart_quiz.onclick = () => {
 }
 
 // if Next Que button clicked
-next_btn.onclick = () => {
+next_button.onclick = () => {
     if (que_count < questions.length - 1) { //if question count is less than total question length
         que_count++; //increment the que_count value
         que_numb++; //increment the que_numb value
@@ -145,7 +145,7 @@ function optionSelected(answer) {
     for (i = 0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
     }
-    next_btn.classList.add("show"); //show the next button if user selected any option
+    next_button.classList.add("show"); //show the next button if user selected any option
 }
 
 function showResult() {
@@ -191,7 +191,7 @@ function startTimer(time) {
             for (i = 0; i < allOptions; i++) {
                 option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
             }
-            next_btn.classList.add("show"); //show the next button if user selected any option
+            next_button.classList.add("show"); //show the next button if user selected any option
         }
     }
 }

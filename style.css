@@ -120,7 +120,7 @@ header {
     color: #659dbd
 }
 
-.menu-btn {
+.menu-button {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -198,7 +198,7 @@ section {
     text-align: center;
 }
 
-.start_btn,
+.start_button,
 .info_box,
 .quiz_box,
 .result_box {
@@ -223,7 +223,7 @@ section {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.start_btn button {
+.start_button button {
     font-size: 30px;
     font-weight: 450;
     color: #659dbd;
