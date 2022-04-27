@@ -199,7 +199,7 @@ section {
 }
 
 .starting_btn,
-.information_box,
+.info_box,
 .quiz_box,
 .resulting_box {
     position: absolute;
@@ -213,7 +213,7 @@ section {
     position: relative;
 }
 
-.information_box.activeInformation,
+.info_box.activeInfo,
 .quiz_box.activeQuiz,
 .resulting_box.activeResult {
     width: 550px;
@@ -235,7 +235,7 @@ section {
     cursor: pointer;
 }
 
-.information_box {
+.info_box {
     width: 530px;
     background: #fff;
     border-radius: 10px;
@@ -246,7 +246,7 @@ section {
 
 }
 
-.information_box .information-title {
+.info_box .info-title {
     height: 50px;
     width: 100%;
     border-bottom: 2px solid lightgrey;
@@ -259,21 +259,21 @@ section {
     text-align: center;
 }
 
-.information_box .information-list {
+.info_box .info-list {
     padding: 15px 30px;
 }
 
-.information_box .information-list .information {
+.info_box .info-list .info {
     margin: 5px 0;
     font-size: 17px;
 }
 
-.information_box .information-list .information span {
+.info_box .info-list .info span {
     font-weight: 600;
     color: #659dbd;
 }
 
-.information_box .buttons {
+.info_box .buttons {
     height: 50px;
     display: flex;
     align-items: center;
@@ -282,7 +282,7 @@ section {
     border-top: 1px solid lightgrey;
 }
 
-.information_box .buttons button {
+.info_box .buttons button {
     margin: 0 5px;
     height: 40px;
     width: 100px;
@@ -530,7 +530,7 @@ footer button.show {
     font-weight: 500;
 }
 
-.resulting_box .score_text span p {
+.result_box .score_text span p {
     padding: 0 4px;
     font-weight: 500;
 }
