@@ -201,7 +201,7 @@ section {
 .starting_btn,
 .info_box,
 .quiz_box,
-.resulting_box {
+.result_box {
     position: absolute;
     left: 50%;
     top: 200px;
@@ -215,7 +215,7 @@ section {
 
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
-.resulting_box.activeResult {
+.result_box.activeResult {
     width: 550px;
     opacity: 1;
     z-index: 5;
@@ -497,7 +497,7 @@ footer button.show {
     transform: scale(1);
 }
 
-.resulting_box {
+.result_box {
     background: #fff;
     border-radius: 5px;
     display: flex;
@@ -512,18 +512,18 @@ footer button.show {
     transition: all 0.4s ease-in;
 }
 
-.resulting_box .icon {
+.result_box .icon {
     font-size: 100px;
     color: #659dbd;
     margin-bottom: 10px;
 }
 
-.resulting_box .complete_text {
+.result_box .complete_text {
     font-size: 20px;
     font-weight: 500;
 }
 
-.resulting_box .score_text span {
+.result_box .score_text span {
     display: flex;
     margin: 10px 0;
     font-size: 18px;
@@ -535,12 +535,12 @@ footer button.show {
     font-weight: 500;
 }
 
-.resulting_box .buttons {
+.result_box .buttons {
     display: flex;
     margin: 20px 0;
 }
 
-.resulting_box .buttons button {
+.result_box .buttons button {
     margin: 0 10px;
     height: 45px;
     padding: 0 20px;
@@ -639,7 +639,7 @@ footer button.show {
 }
 
 .socials a:nth-child(2):hover i {
-    background: linear-gradient(40deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(4deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
