@@ -9,7 +9,7 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
-const restarting_quiz = result_box.querySelector(".buttons .restart");
+const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_question_counter = document.querySelector("footer .total_question");
@@ -64,7 +64,7 @@ continue_btn.onclick = () => {
 }
 
 // if restartQuiz button clicked
-restarting_quiz.onclick = () => {
+restart_quiz.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
     timerseconds = 30;
@@ -161,7 +161,7 @@ function showResult() {
         let scoreTag = '<span>and nice You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     } else if (userScore > 9) { // if user scored more than 1
-        let scoreTag = '<span>Wow Awesome You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        let scoreTag = '<span>Wow Awesome! You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     } else { // if user scored less than 1
         let scoreTag = '<span>You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
