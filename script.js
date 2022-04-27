@@ -1,5 +1,5 @@
 //selecting all required elements
-const starting_btn = document.querySelector(".starting_btn button");
+const start_btn = document.querySelector(".start_btn button");
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
@@ -9,15 +9,15 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
-const restarting_quiz = result_box.querySelector(".buttons .restart");
+const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 const next_btn = document.querySelector("footer .next_btn");
-const bottom_question_counter = document.querySelector("footer .total_question");
+const bottom_ques_counter = document.querySelector("footer .total_que");
 
 // other variables required for running
-let timer_seconds = 30;
+let timeValue = 30;
 let question_count = 0;
-let question_number = 1;
+let que_numb = 1;
 let userScore = 0;
 let counter;
 let counterLine;
@@ -34,17 +34,17 @@ const let1 = () => {
 
 const let2 = () => {
     showTheQuetions(question_count); //calling showQestions function
-    questionCounter(question_number); //passing que_numb value to queCounter
+    questionCounter(question_numb); //passing que_numb value to queCounter
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
-    startingTimer(timer_seconds); //calling startTimer function
-    startingTimerLine(widthValue); //calling startTimerLine function
+    startTimer(timeValue); //calling startTimer function
+    startTimerLine(widthValue); //calling startTimerLine function
     timeText.textContent = "Coundown"; //change the text of timeText to Countdown
     next_btn.classList.remove("show"); //hide the next button
 }
 
 // if startQuiz button clicked
-starting_btn.onclick = let1;
+start_btn.onclick = let1;
 // if exitQuiz button clicked
 exit_btn.onclick = let1;
 
@@ -59,17 +59,17 @@ continue_btn.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showTheQuetions(0); //calling showQestions function
     questionCounter(1); //passing 1 parameter to queCounter
-    startingTimer(30); //calling startTimer function
-    startingTimerLine(0); //calling startTimerLine function
+    startTimer(30); //calling startTimer function
+    startTimerLine(0); //calling startTimerLine function
 }
 
 // if restartQuiz button clicked
-restarting_quiz.onclick = () => {
+restart_quiz.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timerseconds = 30;
+    timeValue = 30;
     question_count = 0;
-    question_number = 1;
+    question_numb = 1;
     userScore = 0;
     widthValue = 0;
     let2();
@@ -79,7 +79,7 @@ restarting_quiz.onclick = () => {
 next_btn.onclick = () => {
     if (question_count < questions.length - 1) { //if question count is less than total question length
         question_count++; //increment the que_count value
-        question_number++; //increment the que_numb value
+        question_numb++; //increment the que_numb value
         let2();
     } else {
         clearInterval(counter); //clear counter
@@ -93,7 +93,7 @@ function showTheQuetions(index) {
     const question_text = document.querySelector(".question_text");
 
     //creating a new span and div tag for question and option and passing the value using array index
-    let question_tag = `<span>${questions[index].number}. ${questions[index].question}</span>`;
+    let question_tag = `<span>${questions[index].numb}. ${questions[index].question}</span>`;
     let option_tag = `<div class="option"><span>${questions[index].options[0]}</span></div>
         <div class="option"><span>${questions[index].options[1]}</span></div>
         <div class="option"><span>${questions[index].options[2]}</span></div>
@@ -153,15 +153,12 @@ function showResult() {
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 8) { // if user scored more than 3
+    if (userScore > 3) { // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span>Well done! You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        let scoreTag = '<span>Congrats! You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
     } else if (userScore > 1) { // if user scored more than 1
         let scoreTag = '<span>and nice You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
-        scoreText.innerHTML = scoreTag;
-    } else if (userScore > 9) { // if user scored more than 1
-        let scoreTag = '<span>Wow Awesome! You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     } else { // if user scored less than 1
         let scoreTag = '<span>You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
@@ -169,7 +166,7 @@ function showResult() {
     }
 }
 
-function startingTimer(time) {
+function startTimer(time) {
     counter = setInterval(timer, 1000);
 
     function timer() {
@@ -199,7 +196,7 @@ function startingTimer(time) {
     }
 }
 
-function startingTimerLine(time) {
+function startTimerLine(time) {
     counterLine = setInterval(timer, 56);
 
     function timer() {
