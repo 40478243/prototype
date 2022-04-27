@@ -198,7 +198,7 @@ section {
     text-align: center;
 }
 
-.starting_btn,
+.start_btn,
 .info_box,
 .quiz_box,
 .result_box {
@@ -223,7 +223,7 @@ section {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.starting_btn button {
+.start_btn button {
     font-size: 30px;
     font-weight: 450;
     color: #659dbd;
@@ -242,7 +242,7 @@ section {
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease;
 
 }
 
@@ -293,7 +293,7 @@ section {
     outline: none;
     border-radius: 5px;
     border: 1px solid #659dbd;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease;
 }
 
 .quiz_box {
@@ -303,7 +303,7 @@ section {
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease;
 }
 
 .quiz_box header {
@@ -389,7 +389,7 @@ section .option_list .option {
     font-size: 17px;
     margin-bottom: 15px;
     cursor: pointer;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -429,7 +429,7 @@ section .option_list .option .icon {
     text-align: center;
     font-size: 15px;
     pointer-events: none;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease;
     line-height: 24px;
 }
 
@@ -484,7 +484,7 @@ footer button {
     opacity: 0;
     pointer-events: none;
     transform: scale(0.95);
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease;
 }
 
 footer button:hover {
@@ -509,7 +509,7 @@ footer button.show {
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease;
 }
 
 .result_box .icon {
@@ -551,15 +551,15 @@ footer button.show {
     outline: none;
     border-radius: 5px;
     border: 1px solid #659dbd;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease;
 }
 
-.buttons button.restarting {
+.buttons button.restart {
     color: #fff;
     background: #659dbd;
 }
 
-.buttons button.restarting:hover {
+.buttons button.restart:hover {
     background: #659dbd;
 }
 
@@ -639,7 +639,7 @@ footer button.show {
 }
 
 .socials a:nth-child(2):hover i {
-    background: linear-gradient(4deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
