@@ -1,8 +1,8 @@
 //selecting all required elements
 const start_btn = document.querySelector(".start_btn button");
-const info = document.querySelector(".info");
-const exit_btn = info.querySelector(".buttons .quit");
-const continue_btn = info.querySelector(".buttons .restart");
+const info_box = document.querySelector(".info_box");
+const exit_btn = info_box.querySelector(".buttons .quit");
+const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
@@ -29,7 +29,7 @@ var soundIncorrect = new Audio("wrongsound.mp3");
 
 // reoccuring functions
 const f1 = () => {
-    info.classList.add("activeInfo"); //show info box
+    info_box.classList.add("activeInfo"); //show info box
 }
 
 const f2 = () => {
@@ -55,7 +55,7 @@ quit_quiz.onclick = () => {
 
 // if continueQuiz button clicked
 continue_btn.onclick = () => {
-    info.classList.remove("activeInfo"); //hide info box
+    info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.add("activeQuiz"); //show quiz box
     showQuetions(0); //calling showQestions function
     queCounter(1); //passing 1 parameter to queCounter
@@ -149,7 +149,7 @@ function optionSelected(answer) {
 }
 
 function showResult() {
-    info.classList.remove("activeInfo"); //hide info box
+    info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");

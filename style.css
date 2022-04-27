@@ -199,7 +199,7 @@ section {
 }
 
 .start_btn,
-.info,
+.info_box,
 .quiz_box,
 .result_box {
     position: absolute;
@@ -213,7 +213,7 @@ section {
     position: relative;
 }
 
-.info.activeInfo,
+.info_box.activeInfo,
 .quiz_box.activeQuiz,
 .result_box.activeResult {
     width: 550px;
@@ -235,7 +235,7 @@ section {
     cursor: pointer;
 }
 
-.info {
+.info_box {
     width: 530px;
     background: #fff;
     border-radius: 10px;
@@ -246,7 +246,7 @@ section {
 
 }
 
-.info .info-title {
+.info_box .info-title {
     height: 50px;
     width: 100%;
     border-bottom: 2px solid lightgrey;
@@ -259,21 +259,21 @@ section {
     text-align: center;
 }
 
-.info .info-list {
+.info_box .info-list {
     padding: 15px 30px;
 }
 
-.info .info-list .info {
+.info_box .info-list .info {
     margin: 5px 0;
     font-size: 17px;
 }
 
-.info .info-list .info span {
+.info_box .info-list .info span {
     font-weight: 600;
     color: #659dbd;
 }
 
-.info .buttons {
+.info_box .buttons {
     height: 50px;
     display: flex;
     align-items: center;
@@ -282,7 +282,7 @@ section {
     border-top: 1px solid lightgrey;
 }
 
-.info .buttons button {
+.info_box .buttons button {
     margin: 0 5px;
     height: 40px;
     width: 100px;
