@@ -15,7 +15,7 @@ const next_btn = document.querySelector("footer .next_btn");
 const bottom_question_counter = document.querySelector("footer .total_question");
 
 // other variables required for running
-let timeValue = 30;
+let timer_seconds = 30;
 let question_count = 0;
 let question_numb = 1;
 let userScore = 0;
@@ -37,7 +37,7 @@ const let2 = () => {
     questionCounter(question_numb); //passing que_numb value to queCounter
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
-    startTimer(timeValue); //calling startTimer function
+    startTimer(timer_seconds); //calling startTimer function
     startTimerLine(widthValue); //calling startTimerLine function
     timeText.textContent = "Coundown"; //change the text of timeText to Countdown
     next_btn.classList.remove("show"); //hide the next button
@@ -67,7 +67,7 @@ continue_btn.onclick = () => {
 restart_quiz.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
-    timeValue = 30;
+    timerseconds = 30;
     question_count = 0;
     question_numb = 1;
     userScore = 0;
