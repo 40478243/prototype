@@ -44,8 +44,10 @@ const let2 = () => {
 }
 
 start_btn.onclick = let1;
-exit_btn.onclick = let1;
 
+exit_btn.onclick = () => {
+    window.location.reload();
+}
 quit_quiz.onclick = () => {
     window.location.reload();
 }
