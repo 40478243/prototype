@@ -201,7 +201,7 @@ section {
 .starting_btn,
 .info_box,
 .quiz_box,
-.result_box {
+.resulting_box {
     position: absolute;
     left: 50%;
     top: 200px;
@@ -215,7 +215,7 @@ section {
 
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
-.result_box.activeResult {
+.resulting_box.activeResult {
     width: 550px;
     opacity: 1;
     z-index: 5;
@@ -497,7 +497,7 @@ footer button.show {
     transform: scale(1);
 }
 
-.result_box {
+.resulting_box {
     background: #fff;
     border-radius: 5px;
     display: flex;
@@ -512,35 +512,35 @@ footer button.show {
     transition: all 0.4s ease-in;
 }
 
-.result_box .icon {
+.resulting_box .icon {
     font-size: 100px;
     color: #659dbd;
     margin-bottom: 10px;
 }
 
-.result_box .complete_text {
+.resulting_box .complete_text {
     font-size: 20px;
     font-weight: 500;
 }
 
-.result_box .score_text span {
+.resulting_box .score_text span {
     display: flex;
     margin: 10px 0;
     font-size: 18px;
     font-weight: 500;
 }
 
-.result_box .score_text span p {
+.resulting_box .score_text span p {
     padding: 0 4px;
     font-weight: 500;
 }
 
-.result_box .buttons {
+.resulting_box .buttons {
     display: flex;
     margin: 20px 0;
 }
 
-.result_box .buttons button {
+.resulting_box .buttons button {
     margin: 0 10px;
     height: 45px;
     padding: 0 20px;

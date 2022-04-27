@@ -4,13 +4,13 @@ const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
-const result_box = document.querySelector(".result_box");
+const resulting_box = document.querySelector(".resulting_box");
 const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
-const restarting_quiz = result_box.querySelector(".buttons .restart");
-const quit_quiz = result_box.querySelector(".buttons .quit");
+const restarting_quiz = resulting_box.querySelector(".buttons .restart");
+const quit_quiz = resulting_box.querySelector(".buttons .quit");
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_question_counter = document.querySelector("footer .total_question");
 
@@ -66,7 +66,7 @@ continue_btn.onclick = () => {
 // if restartQuiz button clicked
 restarting_quiz.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
-    result_box.classList.remove("activeResult"); //hide result box
+    resulting_box.classList.remove("activeResult"); //hide result box
     timerseconds = 30;
     question_count = 0;
     question_number = 1;
@@ -151,8 +151,8 @@ function optionSelected(answer) {
 function showResult() {
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
-    result_box.classList.add("activeResult"); //show result box
-    const scoreText = result_box.querySelector(".score_text");
+    resulting_box.classList.add("activeResult"); //show result box
+    const scoreText = resulting_box.querySelector(".score_text");
     if (userScore > 8) { // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = '<span>Well done! You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
