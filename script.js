@@ -16,8 +16,8 @@ const bottom_ques_counter = document.querySelector("footer .total_que");
 
 // other variables required for running
 let timeValue = 30;
-let que_count = 0;
-let que_numb = 1;
+let question_count = 0;
+let question_numb = 1;
 let userScore = 0;
 let counter;
 let counterLine;
