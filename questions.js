@@ -1,6 +1,6 @@
 // creating an array and passing the number, questions, options, and answers
 let questions = [{
-        numb: 1,
+        number: 1,
         question: "What is capital of Italy?",
         answer: "Rome",
         options: [
@@ -11,7 +11,7 @@ let questions = [{
         ]
     },
     {
-        numb: 2,
+        number: 2,
         question: "What is the capital of South Korea?",
         answer: "Seoul",
         options: [
@@ -22,7 +22,7 @@ let questions = [{
         ]
     },
     {
-        numb: 3,
+        number: 3,
         question: "What is the capital of France?",
         answer: "Paris",
         options: [
@@ -33,7 +33,7 @@ let questions = [{
         ]
     },
     {
-        numb: 4,
+        number: 4,
         question: "What is the capital of Spain?",
         answer: "Madrid",
         options: [
@@ -44,7 +44,7 @@ let questions = [{
         ]
     },
     {
-        numb: 5,
+        number: 5,
         question: "What is the capital of Japan?",
         answer: "Tokyo",
         options: [
@@ -55,7 +55,7 @@ let questions = [{
         ]
     },
     {
-        numb: 6,
+        number: 6,
         question: "What is the capital of the United States?",
         answer: "Washington D.C",
         options: [
@@ -66,7 +66,7 @@ let questions = [{
         ]
     },
     {
-        numb: 7,
+        number: 7,
         question: "What is the capital of Egypt?",
         answer: "Cairo",
         options: [
@@ -77,7 +77,7 @@ let questions = [{
         ]
     },
     {
-        numb: 8,
+        number: 8,
         question: "What is the capital of Scotland?",
         answer: "Edinburgh",
         options: [
@@ -88,7 +88,7 @@ let questions = [{
         ]
     },
     {
-        numb: 9,
+        number: 9,
         question: "What is the capital of Australia?",
         answer: "Canberra",
         options: [
@@ -99,7 +99,7 @@ let questions = [{
         ]
     },
     {
-        numb: 10,
+        number: 10,
         question: "What is the capital of Argentina?",
         answer: "Buenos Aires",
         options: [
