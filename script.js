@@ -17,7 +17,7 @@ const bottom_question_counter = document.querySelector("footer .total_question")
 // other variables required for running
 let timer_seconds = 30;
 let question_count = 0;
-let question_numb = 1;
+let question_number = 1;
 let userScore = 0;
 let counter;
 let counterLine;
@@ -34,7 +34,7 @@ const let1 = () => {
 
 const let2 = () => {
     showTheQuetions(question_count); //calling showQestions function
-    questionCounter(question_numb); //passing que_numb value to queCounter
+    questionCounter(question_number); //passing que_numb value to queCounter
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
     startingTimer(timer_seconds); //calling startTimer function
@@ -69,7 +69,7 @@ restart_quiz.onclick = () => {
     result_box.classList.remove("activeResult"); //hide result box
     timerseconds = 30;
     question_count = 0;
-    question_numb = 1;
+    question_number = 1;
     userScore = 0;
     widthValue = 0;
     let2();
@@ -79,7 +79,7 @@ restart_quiz.onclick = () => {
 next_btn.onclick = () => {
     if (question_count < questions.length - 1) { //if question count is less than total question length
         question_count++; //increment the que_count value
-        question_numb++; //increment the que_numb value
+        question_number++; //increment the que_numb value
         let2();
     } else {
         clearInterval(counter); //clear counter
@@ -93,7 +93,7 @@ function showTheQuetions(index) {
     const question_text = document.querySelector(".question_text");
 
     //creating a new span and div tag for question and option and passing the value using array index
-    let question_tag = `<span>${questions[index].numb}. ${questions[index].question}</span>`;
+    let question_tag = `<span>${questions[index].number}. ${questions[index].question}</span>`;
     let option_tag = `<div class="option"><span>${questions[index].options[0]}</span></div>
         <div class="option"><span>${questions[index].options[1]}</span></div>
         <div class="option"><span>${questions[index].options[2]}</span></div>
