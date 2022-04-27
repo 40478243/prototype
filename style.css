@@ -213,7 +213,7 @@ section {
     position: relative;
 }
 
-.information_box.activeInfo,
+.information_box.activeInformation,
 .quiz_box.activeQuiz,
 .resulting_box.activeResult {
     width: 550px;
@@ -246,7 +246,7 @@ section {
 
 }
 
-.information_box .info-title {
+.information_box .information-title {
     height: 50px;
     width: 100%;
     border-bottom: 2px solid lightgrey;
@@ -259,16 +259,16 @@ section {
     text-align: center;
 }
 
-.information_box .info-list {
+.information_box .information-list {
     padding: 15px 30px;
 }
 
-.information_box .info-list .info {
+.information_box .information-list .information {
     margin: 5px 0;
     font-size: 17px;
 }
 
-.information_box .info-list .info span {
+.information_box .information-list .information span {
     font-weight: 600;
     color: #659dbd;
 }
