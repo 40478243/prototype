@@ -554,12 +554,12 @@ footer button.show {
     transition: all 0.4s ease-in;
 }
 
-.buttons button.restart {
+.buttons button.restarting {
     color: #fff;
     background: #659dbd;
 }
 
-.buttons button.restart:hover {
+.buttons button.restarting:hover {
     background: #659dbd;
 }
 

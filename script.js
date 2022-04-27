@@ -2,14 +2,14 @@
 const starting_btn = document.querySelector(".starting_btn button");
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
-const continue_btn = info_box.querySelector(".buttons .restart");
+const continue_btn = info_box.querySelector(".buttons .restarting");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
-const restart_quiz = result_box.querySelector(".buttons .restart");
+const restarting_quiz = result_box.querySelector(".buttons .restarting");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_question_counter = document.querySelector("footer .total_question");
@@ -28,11 +28,11 @@ var soundCorrect = new Audio("rightsound.mp3");
 var soundIncorrect = new Audio("wrongsound.mp3");
 
 // reoccuring functions
-const f1 = () => {
+const let1 = () => {
     info_box.classList.add("activeInfo"); //show info box
 }
 
-const f2 = () => {
+const let2 = () => {
     showTheQuetions(question_count); //calling showQestions function
     questionCounter(question_number); //passing que_numb value to queCounter
     clearInterval(counter); //clear counter
@@ -44,9 +44,9 @@ const f2 = () => {
 }
 
 // if startQuiz button clicked
-starting_btn.onclick = f1;
+starting_btn.onclick = let1;
 // if exitQuiz button clicked
-exit_btn.onclick = f1;
+exit_btn.onclick = let1;
 
 // if quitQuiz button clicked
 quit_quiz.onclick = () => {
@@ -64,7 +64,7 @@ continue_btn.onclick = () => {
 }
 
 // if restartQuiz button clicked
-restart_quiz.onclick = () => {
+restarting_quiz.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
     timerseconds = 30;
@@ -72,7 +72,7 @@ restart_quiz.onclick = () => {
     question_number = 1;
     userScore = 0;
     widthValue = 0;
-    f2();
+    let2();
 }
 
 // if Next Que button clicked
@@ -80,7 +80,7 @@ next_btn.onclick = () => {
     if (question_count < questions.length - 1) { //if question count is less than total question length
         question_count++; //increment the que_count value
         question_number++; //increment the que_numb value
-        f2();
+        let2();
     } else {
         clearInterval(counter); //clear counter
         clearInterval(counterLine); //clear counterLine
