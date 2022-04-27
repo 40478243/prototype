@@ -242,7 +242,7 @@ section {
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in;
 
 }
 
@@ -293,7 +293,7 @@ section {
     outline: none;
     border-radius: 5px;
     border: 1px solid #659dbd;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in;
 }
 
 .quiz_box {
@@ -303,7 +303,7 @@ section {
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in;
 }
 
 .quiz_box header {
@@ -389,7 +389,7 @@ section .option_list .option {
     font-size: 17px;
     margin-bottom: 15px;
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -429,7 +429,7 @@ section .option_list .option .icon {
     text-align: center;
     font-size: 15px;
     pointer-events: none;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in;
     line-height: 24px;
 }
 
@@ -484,7 +484,7 @@ footer button {
     opacity: 0;
     pointer-events: none;
     transform: scale(0.95);
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in;
 }
 
 footer button:hover {
@@ -509,7 +509,7 @@ footer button.show {
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in;
 }
 
 .result_box .icon {
@@ -551,7 +551,7 @@ footer button.show {
     outline: none;
     border-radius: 5px;
     border: 1px solid #659dbd;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in;
 }
 
 .buttons button.restart {

@@ -9,7 +9,7 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
-const restart_quiz = result_box.querySelector(".buttons .restart");
+const restarting_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_question_counter = document.querySelector("footer .total_question");
@@ -64,7 +64,7 @@ continue_btn.onclick = () => {
 }
 
 // if restartQuiz button clicked
-restart_quiz.onclick = () => {
+restarting_quiz.onclick = () => {
     quiz_box.classList.add("activeQuiz"); //show quiz box
     result_box.classList.remove("activeResult"); //hide result box
     timerseconds = 30;
