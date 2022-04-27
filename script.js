@@ -12,12 +12,12 @@ const timeCount = document.querySelector(".timer .timer_sec");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 const next_btn = document.querySelector("footer .next_btn");
-const bottom_ques_counter = document.querySelector("footer .total_que");
+const bottom_question_counter = document.querySelector("footer .total_question");
 
 // other variables required for running
 let timeValue = 30;
 let question_count = 0;
-let que_numb = 1;
+let question_numb = 1;
 let userScore = 0;
 let counter;
 let counterLine;
