@@ -28,11 +28,11 @@ var soundCorrect = new Audio("rightsound.mp3");
 var soundIncorrect = new Audio("wrongsound.mp3");
 
 // reoccuring functions
-const f1 = () => {
+const let1 = () => {
     info_box.classList.add("activeInfo"); //show info box
 }
 
-const f2 = () => {
+const let2 = () => {
     showQuetions(que_count); //calling showQestions function
     queCounter(que_numb); //passing que_numb value to queCounter
     clearInterval(counter); //clear counter
@@ -44,9 +44,9 @@ const f2 = () => {
 }
 
 // if startQuiz button clicked
-start_btn.onclick = f1;
+start_btn.onclick = let1;
 // if exitQuiz button clicked
-exit_btn.onclick = f1;
+exit_btn.onclick = let1;
 
 // if quitQuiz button clicked
 quit_quiz.onclick = () => {
@@ -72,7 +72,7 @@ restart_quiz.onclick = () => {
     que_numb = 1;
     userScore = 0;
     widthValue = 0;
-    f2();
+    let2();
 }
 
 // if Next Que button clicked
@@ -80,7 +80,7 @@ next_btn.onclick = () => {
     if (que_count < questions.length - 1) { //if question count is less than total question length
         que_count++; //increment the que_count value
         que_numb++; //increment the que_numb value
-        f2();
+        let2();
     } else {
         clearInterval(counter); //clear counter
         clearInterval(counterLine); //clear counterLine
