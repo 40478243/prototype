@@ -3,6 +3,8 @@
 
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -25,6 +27,9 @@ ul {
     text-decoration: underline;
     font-weight: bold;
 }
+
+
+/* Navbar */
 
 .navbar {
     position: fixed;
@@ -468,12 +473,16 @@ footer button {
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
+    border: none;
     outline: none;
     color: #fff;
     border-radius: 5px;
     background: #659dbd;
     border: 1px solid #659dbd;
     line-height: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
     transition: all 0.4s ease;
 }
 
