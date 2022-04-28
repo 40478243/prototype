@@ -348,7 +348,7 @@ section {
     font-weight: 500;
     height: 30px;
     width: 45px;
-    color: rgb(237, 237, 237);
+    color: #fff;
     border-radius: 5px;
     line-height: 30px;
     text-align: center;
@@ -367,7 +367,7 @@ section {
 
 section {
     padding: 25px 30px 25px 30px;
-    background: rgb(246, 246, 246);
+    background: #fff;
 }
 
 section .question_text {
@@ -400,19 +400,19 @@ section .option_list .option:last-child {
 
 section .option_list .option:hover {
     color: #659dbd;
-    background: #cde3fb;
+    background: whitesmoke;
     border: 1px solid #bcdcff;
 }
 
 section .option_list .option.correct {
     color: #1d6a2f;
-    background: #d4edda;
+    background: whitesmoke;
     border: 1px solid #c3e6cb;
 }
 
 section .option_list .option.incorrect {
     color: #91242f;
-    background: #f8d7da;
+    background: whitesmoke;
     border: 1px solid #f5c6cb;
 }
 
@@ -435,12 +435,12 @@ section .option_list .option .icon {
 .option_list .option .icon.tick {
     color: #23903c;
     border-color: #23903c;
-    background: #d4edda;
+    background: whitesmoke;
 }
 
 .option_list .option .icon.cross {
     color: #a42834;
-    background: #f8d7da;
+    background: whitesmoke;
     border-color: #a42834;
 }
 
@@ -554,7 +554,7 @@ footer button.show {
 }
 
 .buttons button.restart {
-    color: whitesmoke;
+    color: #fff;
     background: #659dbd;
 }
 
@@ -564,11 +564,11 @@ footer button.show {
 
 .buttons button.quit {
     color: #659dbd;
-    background: whitesmoke;
+    background: #fff;
 }
 
 .buttons button.quit:hover {
-    color: whitesmoke;
+    color: #fff;
     background: #659dbd;
 }
 
@@ -592,7 +592,7 @@ footer button.show {
     font-size: 36px;
     width: 60px;
     height: 60px;
-    color: whitesmoke;
+    color: #ffffff;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -619,6 +619,14 @@ footer button.show {
 
 .socials a:nth-child(3)::before {
     background: #f70000;
+}
+
+.socials a:hover::before {
+    transform: scale(0);
+}
+
+.socials a i {
+    transition: transform 0.4s ease-in;
 }
 
 .socials a:nth-child(1):hover i {
