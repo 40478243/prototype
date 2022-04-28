@@ -61,7 +61,17 @@ continue_btn.onclick = () => {
     startTimerLine(0);
 }
 
-// if the next question button is clicked
+restart_quiz.onclick = () => {
+    quiz_box.classList.add("activeQuiz");
+    result_box.classList.remove("activeResult");
+    timeValue = 30;
+    question_count = 0;
+    question_number = 1;
+    userScore = 0;
+    widthValue = 0;
+    let2();
+}
+
 next_btn.onclick = () => {
     if (question_count < questions.length - 1) {
         question_count++;
@@ -72,17 +82,6 @@ next_btn.onclick = () => {
         clearInterval(counterLine);
         showResult();
     }
-}
-
-restart_quiz.onclick = () => {
-    quiz_box.classList.add("activeQuiz");
-    result_box.classList.remove("activeResult");
-    timeValue = 30;
-    question_count = 0;
-    question_number = 1;
-    userScore = 0;
-    widthValue = 0;
-    let2();
 }
 
 function showTheQuetions(index) {
@@ -140,6 +139,23 @@ function optionSelected(answer) {
     next_btn.classList.add("show");
 }
 
+function showResult() {
+    info_box.classList.remove("activeInfo");
+    quiz_box.classList.remove("activeQuiz");
+    result_box.classList.add("activeResult");
+    const scoreText = result_box.querySelector(".score_text");
+    if (userScore > 3) {
+        let scoreTag = '<span>Congrats! You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        scoreText.innerHTML = scoreTag;
+    } else if (userScore > 1) {
+        let scoreTag = '<span>and nice You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        scoreText.innerHTML = scoreTag;
+    } else { // if user scored less than 1
+        let scoreTag = '<span>You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
+        scoreText.innerHTML = scoreTag;
+    }
+}
+
 function startTimer(time) {
     counter = setInterval(timer, 1000);
 
@@ -167,23 +183,6 @@ function startTimer(time) {
             }
             next_btn.classList.add("show");
         }
-    }
-}
-
-function showResult() {
-    info_box.classList.remove("activeInfo");
-    quiz_box.classList.remove("activeQuiz");
-    result_box.classList.add("activeResult");
-    const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 3) {
-        let scoreTag = '<span>Congrats! You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
-        scoreText.innerHTML = scoreTag;
-    } else if (userScore > 1) {
-        let scoreTag = '<span>and nice You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
-        scoreText.innerHTML = scoreTag;
-    } else { // if user scored less than 1
-        let scoreTag = '<span>You scored <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>';
-        scoreText.innerHTML = scoreTag;
     }
 }
 
