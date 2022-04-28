@@ -353,7 +353,7 @@ section {
     user-select: none;
 }
 
-.quiz_box header .time_line {
+.quiz_box header .timer_line {
     position: absolute;
     bottom: 0px;
     left: 0px;
