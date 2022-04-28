@@ -162,7 +162,7 @@ section {
     text-align: center;
 }
 .learn-content p {
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .about {
@@ -224,8 +224,6 @@ section {
     font-weight: 450;
     color: #659dbd;
     padding: 15px 30px;
-    outline: none;
-    border: none;
     border-radius: 5px;
     background: #fff;
     cursor: pointer;
@@ -336,14 +334,14 @@ section {
 }
 
 .quiz_box header .timer .time_left_txt {
-    font-weight: 400;
+    font-weight: 420;
     font-size: 17px;
     user-select: none;
 }
 
 .quiz_box header .timer .timer_sec {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 520;
     height: 30px;
     width: 45px;
     color: #fff;
@@ -385,7 +383,6 @@ section .option_list .option {
     padding: 8px 15px;
     font-size: 17px;
     margin-bottom: 15px;
-    cursor: pointer;
     transition: all 0.4s ease;
     display: flex;
     align-items: center;
@@ -471,15 +468,12 @@ footer button {
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
-    border: none;
     outline: none;
     color: #fff;
     border-radius: 5px;
     background: #659dbd;
     border: 1px solid #659dbd;
     line-height: 10px;
-    opacity: 0;
-    pointer-events: none;
     transform: scale(0.95);
     transition: all 0.4s ease;
 }
@@ -504,8 +498,6 @@ footer button.show {
     flex-direction: column;
     justify-content: center;
     transform: translate(-50%, -50%) scale(0.9);
-    opacity: 0;
-    pointer-events: none;
     transition: all 0.4s ease;
 }
 
@@ -544,8 +536,6 @@ footer button.show {
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    border: none;
-    outline: none;
     border-radius: 5px;
     border: 1px solid #659dbd;
     transition: all 0.4s ease;
