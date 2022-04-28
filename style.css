@@ -370,7 +370,7 @@ section {
     background: #fff;
 }
 
-section .question_text {
+section .que_text {
     font-size: 25px;
     font-weight: 600;
 }
@@ -453,17 +453,17 @@ footer {
     border-top: 1px solid lightgrey;
 }
 
-footer .total_question span {
+footer .total_que span {
     display: flex;
     user-select: none;
 }
 
-footer .total_question span p {
+footer .total_que span p {
     font-weight: 500;
     padding: 0 5px;
 }
 
-footer .total_question span p:first-child {
+footer .total_que span p:first-child {
     padding-left: 0px;
 }
 
