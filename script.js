@@ -29,18 +29,18 @@ var soundIncorrect = new Audio("wrongsound.mp3");
 
 // reoccuring functions
 const f1 = () => {
-    info_box.classList.add("activeInfo"); //show info box
+    info_box.classList.add("activeInfo");
 }
 
 const f2 = () => {
-    showQuetions(question_count); //calling showQestions function
-    questionCounter(question_number); //passing que_numb value to queCounter
-    clearInterval(counter); //clear counter
-    clearInterval(counterLine); //clear counterLine
-    startTimer(timeValue); //calling startTimer function
-    startTimerLine(widthValue); //calling startTimerLine function
-    timeText.textContent = "Time Left"; //change the text of timeText to Time Left
-    next_btn.classList.remove("show"); //hide the next button
+    showQuetions(question_count);
+    questionCounter(question_number);
+    clearInterval(counter);
+    clearInterval(counterLine);
+    startTimer(timeValue);
+    startTimerLine(widthValue);
+    timeText.textContent = "Time Left";
+    next_btn.classList.remove("show");
 }
 
 // if startQuiz button clicked
@@ -50,7 +50,7 @@ exit_btn.onclick = f1;
 
 // if quitQuiz button clicked
 quit_quiz.onclick = () => {
-    window.location.reload(); //reload the current window
+    window.location.reload();
 }
 
 // if continueQuiz button clicked
@@ -181,17 +181,6 @@ function startTimer(time) {
     }
 }
 
-function startTimerLine(time) {
-    counterLine = setInterval(timer, 56);
-
-    function timer() {
-        time += 1;
-        time_line.style.width = time + "px";
-        if (time > 549) {
-            clearInterval(counterLine);
-        }
-    }
-}
 
 function questionCounter(index) {
     let totalQuestionCounTag = '<span><p>' + index + '</p> of <p>' + questions.length + '</p></span>';
