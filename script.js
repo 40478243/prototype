@@ -5,7 +5,7 @@ const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
-const option_list = document.querySelector(".option_list");
+const choice_list = document.querySelector(".choice_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
@@ -14,7 +14,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_question_counter = document.querySelector("footer .total_question");
 
-// other variables required for running
+// setting other variables
 let timeValue = 30;
 let question_count = 0;
 let question_number = 1;
@@ -23,7 +23,7 @@ let counter;
 let counterLine;
 let widthValue = 0;
 
-// assets
+// the sounds downloaded for the quiz are selected here
 var soundCorrect = new Audio("rightsound.mp3");
 var soundIncorrect = new Audio("wrongsound.mp3");
 
@@ -78,40 +78,37 @@ next_btn.onclick = () => {
         showResult();
     }
 }
-
-// getting questions and options from array
+// obtaining questions and choices from questions.js file, coding nepal format
 function showQuetions(index) {
     const question_text = document.querySelector(".question_text");
 
-    //creating a new span and div tag for question and option and passing the value using array index
     let question_tag = `<span>${questions[index].number}. ${questions[index].question}</span>`;
-    let option_tag = `<div class="option"><span>${questions[index].options[0]}</span></div>
-        <div class="option"><span>${questions[index].options[1]}</span></div>
-        <div class="option"><span>${questions[index].options[2]}</span></div>
-        <div class="option"><span>${questions[index].options[3]}</span></div>`;
+    let choice_tag = `<div class="choice"><span>${questions[index].choices[0]}</span></div>
+        <div class="choice"><span>${questions[index].choices[1]}</span></div>
+        <div class="choice"><span>${questions[index].choices[2]}</span></div>
+        <div class="choice"><span>${questions[index].choices[3]}</span></div>`;
     question_text.innerHTML = question_tag;
-    option_list.innerHTML = option_tag;
+    choice_list.innerHTML = choice_tag;
 
-    const option = option_list.querySelectorAll(".option");
+    const choice = choice_list.querySelectorAll(".choice");
 
-    // set onclick attribute to all available options
-    for (i = 0; i < option.length; i++) {
-        option[i].setAttribute("onclick", "optionSelected(this)");
+    for (i = 0; i < choice.length; i++) {
+        choice[i].setAttribute("onclick", "choiceSelected(this)");
     }
 }
 
-//if user clicked on option
-function optionSelected(answer) {
+//function if the user selects an choice
+function choiceSelected(answer) {
     clearInterval(counter);
     clearInterval(counterLine);
     let userAns = answer.textContent;
     let correcAns = questions[question_count].answer;
-    const allOptions = option_list.children.length;
+    const allChoices = choice_list.children.length;
 
-    // creating the new div tags which for icons
+    // adding the icons for the tick and cross
     let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
     let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
-
+    //what will happen if the user selects right or wrong answers
     if (userAns == correcAns) {
         userScore += 1;
         answer.classList.add("correct");
@@ -125,20 +122,20 @@ function optionSelected(answer) {
         soundIncorrect.play();
         console.log("Wrong Answer");
 
-        for (i = 0; i < allOptions; i++) {
-            if (option_list.children[i].textContent == correcAns) {
-                option_list.children[i].setAttribute("class", "option correct");
-                option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
+        for (i = 0; i < allChoices; i++) {
+            if (choice.children[i].textContent == correcAns) {
+                choice.children[i].setAttribute("class", "choice correct");
+                choice.children[i].insertAdjacentHTML("beforeend", tickIconTag);
                 console.log("Auto selected correct answer.");
             }
         }
     }
-    for (i = 0; i < allOptions; i++) {
-        option_list.children[i].classList.add("disabled");
+    for (i = 0; i < allChoices; i++) {
+        choice_list.children[i].classList.add("disabled");
     }
     next_btn.classList.add("show");
 }
-
+    //function for showing the user their score and a message depending on that score
 function showResult() {
     info_box.classList.remove("activeInfo");
     quiz_box.classList.remove("activeQuiz");
@@ -155,7 +152,7 @@ function showResult() {
         scoreText.innerHTML = scoreTag;
     }
 }
-
+//function for timer
 function startTimer(time) {
     counter = setInterval(timer, 1000);
 
@@ -168,7 +165,7 @@ function startTimer(time) {
     }
 }
 
-
+//question counter at bottom of the page using span
 function questionCounter(index) {
     let totalQuestionCounTag = '<span><p>' + index + '</p> of <p>' + questions.length + '</p></span>';
     bottom_question_counter.innerHTML = totalQuestionCounTag;
