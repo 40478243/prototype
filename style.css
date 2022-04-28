@@ -348,12 +348,12 @@ section {
     font-weight: 500;
     height: 30px;
     width: 45px;
-    color: #fff;
+    color: rgb(237, 237, 237);
     border-radius: 5px;
     line-height: 30px;
     text-align: center;
-    background: #343a41;
-    border: 1px solid #343a41;
+    background: #353b41;
+    border: 1px solid #262a2e;
     user-select: none;
 }
 
@@ -367,7 +367,7 @@ section {
 
 section {
     padding: 25px 30px 25px 30px;
-    background: #fff;
+    background: rgb(246, 246, 246);
 }
 
 section .question_text {
@@ -554,7 +554,7 @@ footer button.show {
 }
 
 .buttons button.restart {
-    color: #fff;
+    color: whitesmoke;
     background: #659dbd;
 }
 
@@ -564,11 +564,11 @@ footer button.show {
 
 .buttons button.quit {
     color: #659dbd;
-    background: #fff;
+    background: whitesmoke;
 }
 
 .buttons button.quit:hover {
-    color: #fff;
+    color: whitesmoke;
     background: #659dbd;
 }
 
@@ -592,7 +592,7 @@ footer button.show {
     font-size: 36px;
     width: 60px;
     height: 60px;
-    color: #f0f0f0;
+    color: whitesmoke;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -619,14 +619,6 @@ footer button.show {
 
 .socials a:nth-child(3)::before {
     background: #f70000;
-}
-
-.socials a:hover::before {
-    transform: scale(0);
-}
-
-.socials a i {
-    transition: transform 0.4s ease-in;
 }
 
 .socials a:nth-child(1):hover i {

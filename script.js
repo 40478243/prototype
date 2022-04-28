@@ -1,4 +1,4 @@
-//selecting all required elements
+//all of the elements required are being selected below
 const start_btn = document.querySelector(".start_btn button");
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
@@ -43,17 +43,12 @@ const f2 = () => {
     next_btn.classList.remove("show");
 }
 
-// if startQuiz button clicked
+// if the different buttons are clicked
 start_btn.onclick = f1;
-// if exitQuiz button clicked
 exit_btn.onclick = f1;
-
-// if quitQuiz button clicked
 quit_quiz.onclick = () => {
     window.location.reload();
 }
-
-// if continueQuiz button clicked
 continue_btn.onclick = () => {
     info_box.classList.remove("activeInfo");
     quiz_box.classList.add("activeQuiz");
@@ -62,8 +57,6 @@ continue_btn.onclick = () => {
     startTimer(30);
     startTimerLine(0);
 }
-
-// if restartQuiz button clicked
 restart_quiz.onclick = () => {
     quiz_box.classList.add("activeQuiz");
     result_box.classList.remove("activeResult");
@@ -74,8 +67,6 @@ restart_quiz.onclick = () => {
     widthValue = 0;
     f2();
 }
-
-// if Next Que button clicked
 next_btn.onclick = () => {
     if (question_count < questions.length - 1) {
         question_count++;
