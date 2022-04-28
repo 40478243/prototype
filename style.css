@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-
+/*CSS file that will create the styling for all the website */
 
 * {
     margin: 0;
@@ -27,9 +25,6 @@ ul {
     text-decoration: underline;
     font-weight: bold;
 }
-
-
-/* Navbar */
 
 .navbar {
     position: fixed;
@@ -165,6 +160,9 @@ section {
     align-items: center;
     flex-direction: column;
     text-align: center;
+}
+.learn-content p {
+    padding-bottom: 5px;
 }
 
 .about {
