@@ -4,7 +4,7 @@ let questions = [{
         number: 1,
         question: "What is capital of Italy?",
         answer: "Rome",
-        choices: [
+        options: [
             "Rome",
             "Milan",
             "Turin",
@@ -15,7 +15,7 @@ let questions = [{
         number: 2,
         question: "What is the capital of South Korea?",
         answer: "Seoul",
-        choices: [
+        options: [
             "Tokyo",
             "Busan",
             "Seoul",
@@ -26,7 +26,7 @@ let questions = [{
         number: 3,
         question: "What is the capital of France?",
         answer: "Paris",
-        choices: [
+        options: [
             "Nice",
             "Paris",
             "Lille",
@@ -37,7 +37,7 @@ let questions = [{
         number: 4,
         question: "What is the capital of Spain?",
         answer: "Madrid",
-        choices: [
+        options: [
             "Madrid",
             "Barcelona",
             "Seville",
@@ -48,7 +48,7 @@ let questions = [{
         number: 5,
         question: "What is the capital of Japan?",
         answer: "Tokyo",
-        choices: [
+        options: [
             "Kyoto",
             "Osaka",
             "Kobe",
@@ -59,7 +59,7 @@ let questions = [{
         number: 6,
         question: "What is the capital of the United States?",
         answer: "Washington D.C",
-        choices: [
+        options: [
             "Los Angeles",
             "New York City",
             "Washington D.C",
@@ -70,7 +70,7 @@ let questions = [{
         number: 7,
         question: "What is the capital of Egypt?",
         answer: "Cairo",
-        choices: [
+        options: [
             "Alexandria",
             "Algiers",
             "Sharm el Sheikh",
@@ -81,7 +81,7 @@ let questions = [{
         number: 8,
         question: "What is the capital of Scotland?",
         answer: "Edinburgh",
-        choices: [
+        options: [
             "Edinburgh",
             "Glasgow",
             "Perth",
@@ -92,7 +92,7 @@ let questions = [{
         number: 9,
         question: "What is the capital of Australia?",
         answer: "Canberra",
-        choices: [
+        options: [
             "Sydney",
             "Canberra",
             "Melbourne",
@@ -103,7 +103,7 @@ let questions = [{
         number: 10,
         question: "What is the capital of Argentina?",
         answer: "Buenos Aires",
-        choices: [
+        options: [
             "Buenos Aires",
             "Rio di Janiero",
             "Mendoza",
