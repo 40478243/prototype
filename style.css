@@ -595,7 +595,7 @@ footer button.show {
     margin: 0 7px;
 }
 
-.socials a::before {
+.socials a {
     content: '';
     position: absolute;
     width: 60px;
@@ -605,15 +605,15 @@ footer button.show {
     transition: transform 0.4s ease-in;
 }
 
-.socials a:nth-child(1)::before {
+.socials a:nth-child(1) {
     background: #38529a;
 }
 
-.socials a:nth-child(2)::before {
+.socials a:nth-child(2) {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
-.socials a:nth-child(3)::before {
+.socials a:nth-child(3) {
     background: #f70000;
 }
 
