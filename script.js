@@ -162,6 +162,11 @@ function startTimer(time) {
             clearInterval(counter);
             const allOptions = option_list.children.length;
             let correctAnswer = questions[question_count].answer;
+            for(i=0; i < allOptions; i++){
+                if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer
+                    option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
+                    option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
+                    console.log("Time Off: Auto selected correct answer.");
             next_btn.classList.add("show");
         }
     }
