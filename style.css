@@ -617,3 +617,6 @@ footer button.show {
     background: #f70000;
 }
 
+.socials:hover {
+    opacity: 0.5;
+}
