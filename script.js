@@ -6,7 +6,6 @@ const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
-const timer_line = document.querySelector("header .timer_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 const restart_quiz = result_box.querySelector(".buttons .restart");
@@ -160,6 +159,9 @@ function startTimer(time) {
         timeCount.textContent = time;
         time--;
         if (time < 0) {
+            clearInterval(counter);
+            const allOptions = option_list.children.length;
+            let correcAns = questions[que_count].answer;
             next_btn.classList.add("show");
         }
     }
