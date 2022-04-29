@@ -617,6 +617,3 @@ footer button.show {
     background: #f70000;
 }
 
-.socials a:hover::before {
-    transform: scale(0);
-}
