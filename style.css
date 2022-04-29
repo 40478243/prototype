@@ -244,13 +244,13 @@ section {
     height: 50px;
     width: 100%;
     border-bottom: 2px solid lightgrey;
-    display: block;
-    align-items: center;
     padding: 0 30px;
     border-radius: 6px 6px 0 0;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 620;
     text-align: center;
+    align-items: center;
+    display: block;
     align-items: center;
 }
 
@@ -281,11 +281,11 @@ section {
     margin: 0 5px;
     height: 40px;
     width: 100px;
-    font-size: 16px;
-    font-weight: 500;
     cursor: pointer;
     border: none;
     outline: none;
+    font-size: 16px;
+    font-weight: 500;
     border-radius: 5px;
     border: 1px solid #659dbd;
     transition: all 0.4s ease;
