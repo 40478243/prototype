@@ -153,7 +153,7 @@ function showResult() {
 }
 //function for timer
 function startTimer(time) {
-    counter = setInterval(timer, 30);
+    counter = setInterval(timer, 1000);
 
     function timer() {
         timeCount.textContent = time;
