@@ -161,7 +161,7 @@ function startTimer(time) {
         if (time < 0) {
             clearInterval(counter);
             const allOptions = option_list.children.length;
-            let correcAns = questions[que_count].answer;
+            let correcAns = questions[question_count].answer;
             next_btn.classList.add("show");
         }
     }
