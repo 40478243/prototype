@@ -618,6 +618,5 @@ footer button.show {
 }
 
 .socials a:hover {
-    background: white;
-    opacity: 0.5;
+    border: 2px, rgb(219, 219, 219)
 }
