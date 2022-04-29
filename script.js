@@ -14,13 +14,13 @@ const next_btn = document.querySelector("footer .next_btn");
 const bottom_question_counter = document.querySelector("footer .total_question");
 
 // setting other variables
-let timeValue = 30;
-let question_count = 0;
-let question_number = 1;
 let userScore = 0;
 let counter;
 let counterLine;
 let widthValue = 0;
+let timeValue = 30;
+let question_count = 0;
+let question_number = 1;
 
 // the sounds downloaded for the quiz are selected here
 var soundCorrect = new Audio("rightsound.mp3");
@@ -153,7 +153,7 @@ function showResult() {
 }
 //function for timer
 function startTimer(time) {
-    counter = setInterval(timer, 1000);
+    counter = setInterval(timer, 30);
 
     function timer() {
         timeCount.textContent = time;
@@ -167,18 +167,18 @@ function startTimer(time) {
 
 //question counter at bottom of the page using span
 function questionCounter(index) {
-    let totalQuestionCounTag = '<span><p>' + index + '</p> of <p>' + questions.length + '</p></span>';
+    let totalQuestionCounTag = '<span><p>' + index + '</p> of <p>10</p></span>';
     bottom_question_counter.innerHTML = totalQuestionCounTag;
 }
 
 window.onscroll = () => {
     let navbarLinks = document.querySelectorAll("nav a");
 
-    scrollpos = window.scrollY;
+    scrollposition = window.scrollY;
     navbarLinks.forEach(link => {
         let section = document.querySelector(link.hash);
-        if (section.offsetTop <= scrollpos + 150 &&
-            section.offsetTop + section.offsetHeight > scrollpos + 150) {
+        if (section.offsetTop <= scrollposition + 155 &&
+            section.offsetTop + section.offsetHeight > scrollposition + 155) {
             link.classList.add("active");
         } else {
             link.classList.remove("active");
