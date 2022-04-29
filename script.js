@@ -167,6 +167,8 @@ function startTimer(time) {
                     option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
                     option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
                     console.log("Time Off: Auto selected correct answer.");
+                }
+            }
             next_btn.classList.add("show");
         }
     }
